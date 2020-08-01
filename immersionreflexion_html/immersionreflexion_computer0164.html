@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction3() {
+  document.getElementById("myFunction3").style.display = "none";
+  document.getElementById("myFunction31").style.display = "inline";
+
+}
+</script>
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    <span class="computerplayer"><span id="storedName3"></span>:
+    <br><br>Weil ich damit ständig an das Datennetz angeschlossen bin und ich vollständig im Cyberspace aufgehen kann?</span>
+
+    <br><br><span id="myFunction3" class="linkcomputer blink" onclick="myFunction3()">/...</span>
+
+
+    <span id="myFunction31">Das war das Ziel von <span class=logobigcorp>BIGCORP</span> und die Leute ließen sich von Die Neue Technologie<span class=logobigcorp><sup>TM</sup></span> überzeugen.<br><br>
+
+    <span class="linkcomputerplayer blink"><a href="immersionreflexion_computer0165.html">/...</a></span></span>
+
+   
+
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+     document.getElementById("storedName3").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

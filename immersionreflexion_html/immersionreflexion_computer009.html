@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    Und irgendwo - erst leise und dann immer lauter - setzt der rhythmische Schlag einer Pauke ein: <br><br><span class="blink bold">Badumm</span><span class="blink3 bold">Badumm</span>
+    <br><br><br><span class="linkcomputer blink"><a href="immersionreflexion_computer010.html">/...</a></span>
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

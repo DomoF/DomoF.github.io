@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction3() {
+  document.getElementById("myFunction3").style.display = "none";
+  document.getElementById("myFunction31").style.display = "inline";
+
+}
+</script>
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">Als Agaue dann triumphierend mit dem Kopf des vermeintlich erlegten Löwen in die Stadt zurückkommt, lässt ihr Rausch langsam nach und sie erkennt, den Kopf ihres Sohnes in der Hand zu halten. 
+    
+    <br><br><br> <span class="computerplayer"><span id="storedName2"></span>:
+    <span id="myFunction3" class="linkcomputerplayer blink" onclick="myFunction3()">...</span>
+
+
+    <span id="myFunction31">Bei dem Stoff verstehe ich, weshalb Theater verboten wurde<br><br><span class="linkcomputerplayerplayer blink"><a href="immersionreflexion_computer0161.html">/...</a></span></span>
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

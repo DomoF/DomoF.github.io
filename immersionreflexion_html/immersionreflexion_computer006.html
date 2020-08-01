@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    Viele fragten sich auch, was das denn alles überhaupt solle. Man sähe doch, dass die Leute da nur spielten. Das sei nicht echt. Und wenn man Pech hat, hustet jemand im Publikum, und die Illusion der Bühne ist dahin.  
+    Lass mich <span class=computerplayer>dir</span>, <span class="computerplayer" id="storedName2"></span> von einer alten, knarzigen Festplatte ein Theatererlebnis erzählen<br>
+    <br><span class="linkcomputer blink"><a href="immersionreflexion_computer007.html">/...</a></span>
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction3() {
+  document.getElementById("myFunction3").style.display = "none";
+  document.getElementById("myFunction31").style.display = "inline";
+
+}
+</script>
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    <span class="computerplayer"><span id="storedName3"></span>:
+    <br><br>Das Stück selbst aber ist auf eine Weise auch ein Rausch - wie ein brutales Gefangennehmen und anstatt eines "Eintauchens" fast schon ein "Ertränken".</span>
+
+    <br><br><span id="myFunction3" class="linkcomputer blink" onclick="myFunction3()">/...</span>
+
+
+    <span id="myFunction31"> Stimmt. Erinnert <span class=computerplayer>dich</span> das nicht an ein anderes Gerät? Vielleicht an Die Neue Technologie<span class=logobigcorp><sup>TM</sup></span>?<br><br>
+
+    <span class="linkcomputerplayer blink"><a href="immersionreflexion_computer0164.html">/...</a></span></span>
+
+   
+
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+     document.getElementById("storedName3").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

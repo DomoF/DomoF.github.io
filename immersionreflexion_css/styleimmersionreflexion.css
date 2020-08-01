@@ -1,0 +1,1402 @@
+/*Die allgemeine Formatierung der startpage */
+
+.startpage {
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+    max-width: 700px;
+    margin: auto;
+
+  
+}
+
+/*Die allgemeine Formatierung der Links der startpage */
+
+.startpage a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.startpage a:hover {
+  color: gray;
+  text-decoration:underline;
+}
+
+/*Die Erschein-Animationen für die Startseite */
+
+@keyframes titlefade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes titlefade {
+from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-moz-keyframes titlefade {
+from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-o-keyframes titlefade {
+from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-ms-keyframes titlefade {
+from {opacity: 0}
+  to {opacity: 1}
+}
+
+/*Der erste Block von Elementen */
+
+.startpage1 {
+    font-size: 220%;
+    font-weight: bold;
+    color: DarkGray;
+    opacity: 0%;
+  
+    animation: titlefade 4s ease-in 2s forwards;
+    -webkit-animation: titlefade 4s ease-in 2s forwards;
+    -moz-animation: titlefade 4s ease-in 2s forwards;
+    -o-animation: titlefade 4s ease-in 2s forwards;
+    -ms-animation: titlefade 4s ease-in 2s forwards;
+}
+
+
+.startpage2 {
+  font-size: 110%;
+    color: black;
+    opacity: 0%;
+
+    animation: titlefade 4s ease-in 3s forwards;
+    -webkit-animation: titlefade 4s ease-in 3s forwards;
+    -moz-animation: titlefade 4s ease-in 3s forwards;
+    -o-animation: titlefade 4s ease-in 3s forwards;
+    -ms-animation: titlefade 4s ease-in 3s forwards;
+}
+
+.startpage3 {
+  font-size: 110%;
+    color: black;
+    opacity: 0%;
+
+    animation: titlefade 4s ease-in 4s forwards;
+    -webkit-animation: titlefade 4s ease-in 4s forwards;
+    -moz-animation: titlefade 4s ease-in 4s forwards;
+    -o-animation: titlefade 4s ease-in 4s forwards;
+    -ms-animation: titlefade 4s ease-in 4s forwards;
+}
+
+#startpage4 {
+   font-size: 110%;
+    color: black;
+    display: none;
+}
+
+.onklickstart {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.onklickstart:hover{
+  color: gray;
+}
+
+.onklickstart::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: gray;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.onklickstart:hover:before {
+  right: 0 !important;
+}
+
+.startpage5 {
+  font-size: 110%;
+    color: black;
+    opacity: 0%;
+
+    animation: titlefade 4s ease-in 1s forwards;
+    -webkit-animation: titlefade 4s ease-in 1s forwards;
+    -moz-animation: titlefade 4s ease-in 1s forwards;
+    -o-animation: titlefade 4s ease-in 1s forwards;
+    -ms-animation: titlefade 4s ease-in 1s forwards;
+}
+
+
+/*Zweites Bild, Stadt*/
+
+@font-face {
+font-family: Glass_TTY_VT2020;
+src: url("../immersionreflexion_font/Glass_TTY_VT220.ttf");
+
+}
+
+.backgroundcity001 {
+background-image: url("../immersionreflexion_images/pict2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+}
+
+
+.city001 {
+
+  position: relative;
+  margin: auto;
+  max-width: 30%; 
+
+  margin-top: 150px;
+  margin-bottom: 50px;
+  
+  text-align: center;
+  
+  font-family: Glass_TTY_VT2020;
+  font-size: 1000%;
+  color: white;
+  opacity: 0%;
+  letter-spacing: -0.2em;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  padding: 30px;  
+  background: rgba(0, 0, 0, 0.7);
+
+
+  animation: titlefade 4s ease-in 0s forwards;
+  -webkit-animation: titlefade 4s ease-in 0s forwards;
+  -moz-animation: titlefade 4s ease-in 0s forwards;
+  -o-animation: titlefade 4s ease-in 0s forwards;
+  -ms-animation: titlefade 4s ease-in 0s forwards;
+
+}
+
+.city001_table {
+  font-size: 160%;
+  font-family: Glass_TTY_VT2020;
+  opacity: 0; 
+  text-align: left; 
+  color: white;
+
+  position: relative;
+  margin: auto;
+  width: 60%;
+
+
+  animation: titlefade 4s ease-in 3s forwards;
+  -webkit-animation: titlefade 4s ease-in 3s forwards;
+  -moz-animation: titlefade 4s ease-in 3s forwards;
+  -o-animation: titlefade 4s ease-in 3s forwards;
+  -ms-animation: titlefade 4s ease-in 3s forwards;
+
+}
+
+.city001_table_td {
+  padding: 5px 20px 5px 20px;
+}
+
+.city001_2 {
+  font-family: Glass_TTY_VT2020;
+  text-align: center;
+  font-size: 160%;
+  color: white;
+  opacity: 0%;
+
+  margin: auto;
+  width: 50%;
+  height: 50px;
+
+
+   animation: titlefade 4s ease-in 6s forwards;
+   -webkit-animation: titlefade 4s ease-in 6s forwards;
+   -moz-animation: titlefade 4s ease-in 6s forwards;
+   -o-animation: titlefade 4s ease-in 6s forwards;
+   -ms-animation: titlefade 4s ease-in 6s forwards;
+
+}
+
+.city001_table_td a {
+  font-size: 60%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+.city001_table_td a:hover {
+    color: gray;
+  text-decoration:none;
+
+}
+
+.city001_2 a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.city001_2 a:hover {
+  color: gray;
+  text-decoration:none;
+}
+
+
+
+.linkcity001 {
+  display: inline-block;
+  position: relative;
+}
+
+.linkcity001::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: gray;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkcity001:hover:before {
+  right: 0 !important;
+}
+
+
+
+.city002 {
+
+  position: relative;
+  margin: auto;
+  max-width: 30%; 
+
+  margin-top: 150px;
+  margin-bottom: 50px;
+  
+  text-align: left;
+  
+  font-family: Glass_TTY_VT2020;
+  font-size: 160%;
+  color: white;
+  opacity: 0%;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  padding: 30px;  
+  background: rgba(0, 0, 0, 0.7);
+
+
+  animation: titlefade 2s ease-in 0s forwards;
+  -webkit-animation: titlefade 2s ease-in 0s forwards;
+  -moz-animation: titlefade 2s ease-in 0s forwards;
+  -o-animation: titlefade 2s ease-in 0s forwards;
+  -ms-animation: titlefade 2s ease-in 0s forwards;
+
+}
+
+.city002 a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.city002 a:hover {
+  color: gray;
+  text-decoration:none;
+}
+
+.linkcity002 {
+  display: inline-block;
+  position: relative;
+}
+
+.linkcity002::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: gray;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkcity002:hover:before {
+  right: 0 !important;
+}
+
+
+
+.backgroundstreet001 {
+background-image: url("../immersionreflexion_images/pict3.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+}
+
+.street001 {
+
+  position: relative;
+  margin: auto;
+  max-width: 30%; 
+
+  margin-top: 150px;
+  margin-bottom: 50px;
+  
+  text-align: left;
+  
+  font-family: Glass_TTY_VT2020;
+  font-size: 160%;
+  color: white;
+  opacity: 0%;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  padding: 30px;  
+  background: rgba(0, 0, 0, 0.7);
+
+
+  animation: titlefade 2s ease-in 0s forwards;
+  -webkit-animation: titlefade 2s ease-in 4s forwards;
+  -moz-animation: titlefade 2s ease-in 4s forwards;
+  -o-animation: titlefade 2s ease-in 4s forwards;
+  -ms-animation: titlefade 2s ease-in 4s forwards;
+
+}
+
+.street001 a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.street001 a:hover {
+  color: gray;
+  text-decoration:none;
+}
+
+.linkstreet001 {
+  display: inline-block;
+  position: relative;
+}
+
+.linkstreet001::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: gray;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkstreet001:hover:before {
+  right: 0 !important;
+}
+
+.backgroundstreet002 {
+/*background-image: url("../immersionreflexion_images/pict3.gif");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+.backgroundcomputer001 {
+  background-image: url("../immersionreflexion_images/pict41.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+
+}
+
+.computerbloc a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+ }
+
+.computerbloc a:hover {
+  color: darkgray;
+  text-decoration:none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+}
+
+
+.computerbloc {
+  color: white;
+  font-size: 130%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  text-align: left;
+  
+/*
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+*/  
+  position: center;
+
+  /*transform: translate(-50%, -50%);*/
+  
+  max-width: 600px;
+  margin: auto;
+  margin-top: 65px;
+
+}
+
+
+
+.linkcomputer {
+  display: inline-block;
+  position: relative;
+
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+}
+
+.linkcomputer::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: white;
+    height: 3px;
+    text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+    
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+
+}
+
+
+.computerplayer {
+  color: lime;
+  font-size: 100%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  text-align: left;
+
+}
+
+
+.linkcomputer:hover:before {
+  right: 0 !important;
+}
+
+.linkcomputerplayer a{
+  color: lime;
+}
+
+.linkcomputerplayer a:hover {
+  color: lime;
+} 
+
+.linkcomputerplayer {
+  display: inline-block;
+  position: relative;
+  color: lime;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkcomputerplayer::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: limegreen;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+
+}
+
+.linkcomputerplayer:hover:before {
+  right: 0 !important;
+}
+
+.blink {
+  animation: blinker 1s ease infinite;
+  -webkit-animation: blinker 1s ease infinite;
+  -moz-animation: blinker 1s ease infinite;
+  -o-animation: blinker 1s ease infinite;
+  -ms-animation: blinker 1s ease infinite;
+}
+
+.blink2 {
+  animation: blinker 0.5s ease infinite;
+  -webkit-animation: blinker 0.5s ease infinite;
+  -moz-animation: blinker 0.5s ease infinite;
+  -o-animation: blinker 0.5s ease infinite;
+  -ms-animation: blinker 0.5s ease infinite;
+
+}
+
+.blink3 {
+  animation: blinker 1s 0.5s ease infinite;
+  -webkit-animation: blinker 1s 0.5s ease infinite;
+  -moz-animation: blinker 1s 0.5s ease infinite;
+  -o-animation: blinker 1s 0.5s ease infinite;
+  -ms-animation: blinker 1s 0.5s ease infinite;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.input1 {
+  background: none;
+  color: white;
+  font-size: 110%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+
+  padding: 5px;
+
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: white;
+
+  cursor: pointer;
+
+
+}
+
+.input1:hover {
+background: rgba(255,255,255, 0.09);
+border-color: white !important;
+text-shadow: inherit;
+
+cursor: pointer;
+}
+
+.input1:focus {
+  outline-color: inherit;
+  background: rgba(255,255,255, 0.09);
+  text-shadow: inherit;
+}
+
+.username {
+  color: white;
+  text-shadow: inherit;
+}
+
+.input2 {
+  background: none;
+  color: white;
+  font-size: 110%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  
+
+  /*padding: 5px;*/
+
+  border-style: none;
+}
+
+.input2:hover {
+  cursor: pointer;
+}
+.input2 {
+  display: inline-block;
+  position: relative;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+
+}
+
+.input2::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: white;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+   
+}
+
+.input2:hover:before {
+  right: 0 !important;
+
+}
+
+.input3 {
+  background: none;
+  color: DeepSkyBlue;
+  font-size: 110%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  
+
+  /*padding: 5px;*/
+
+  border-style: none;
+}
+
+.input3:hover {
+  cursor: pointer;
+}
+.input3 {
+  display: inline-block;
+  position: relative;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+
+}
+
+.input3::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: DeepSkyBlue;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+   
+}
+
+.input3:hover:before {
+  right: 0 !important;
+
+}
+
+#storedName {
+  display: inline;
+}
+
+#computerbloc1003 {
+  display: none;
+
+}
+
+.myfunction2 {
+display: inherit;
+}
+
+.myfunction21 {
+  display: inherit;
+}
+
+.computerfooter {
+  color: Gainsboro;
+  font-size: 95%;
+  font-weight: normal;
+}
+
+.computerfooter a {
+  font-weight: normal;
+}
+.computerfooterplayer {
+  color: #cdff82 !important;
+  font-size: 95%; 
+  font-weight: normal;
+}
+
+.computerfooterplayer a {
+  font-weight: normal;
+}
+
+.reflektieren {
+  color: orange;
+  font-family: Glass_TTY_VT2020;
+}
+
+.bold {
+  font-weight: bold;
+
+}
+
+.sup {
+  font-size: 60%;
+}
+
+.euripides1 {
+  opacity: 0;
+
+    animation: titlefade 1s ease-in 2s forwards;
+    -webkit-animation: titlefade 1s ease-in 2s forwards;
+    -moz-animation: titlefade 1s ease-in 2s forwards;
+    -o-animation: titlefade 1s ease-in 2s forwards;
+    -ms-animation: titlefade 1s ease-in 2s forwards;
+}
+
+.euripides2 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 4s forwards;
+    -webkit-animation: titlefade 1s ease-in 4s forwards;
+    -moz-animation: titlefade 1s ease-in 4s forwards;
+    -o-animation: titlefade 1s ease-in 4s forwards;
+    -ms-animation: titlefade 1s ease-in 4s forwards;
+}
+
+.euripides3 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 6s forwards;
+    -webkit-animation: titlefade 1s ease-in 6s forwards;
+    -moz-animation: titlefade 1s ease-in 6s forwards;
+    -o-animation: titlefade 1s ease-in 6s forwards;
+    -ms-animation: titlefade 1s ease-in 6s forwards;
+}
+
+.euripides4 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 8s forwards;
+    -webkit-animation: titlefade 1s ease-in 8s forwards;
+    -moz-animation: titlefade 1s ease-in 8s forwards;
+    -o-animation: titlefade 1s ease-in 8s forwards;
+    -ms-animation: titlefade 1s ease-in 8s forwards;
+}
+
+.euripides5 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 10s forwards;
+    -webkit-animation: titlefade 1s ease-in 10s forwards;
+    -moz-animation: titlefade 1s ease-in 10s forwards;
+    -o-animation: titlefade 1s ease-in 10s forwards;
+    -ms-animation: titlefade 1s ease-in 10s forwards;
+}
+
+.euripides6 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 12s forwards;
+    -webkit-animation: titlefade 1s ease-in 12s forwards;
+    -moz-animation: titlefade 1s ease-in 12s forwards;
+    -o-animation: titlefade 1s ease-in 12s forwards;
+    -ms-animation: titlefade 1s ease-in 12s forwards;
+}
+
+.euripides7 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 14s forwards;
+    -webkit-animation: titlefade 1s ease-in 14s forwards;
+    -moz-animation: titlefade 1s ease-in 14s forwards;
+    -o-animation: titlefade 1s ease-in 14s forwards;
+    -ms-animation: titlefade 1s ease-in 14s forwards;
+}
+
+.euripides8 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 16s forwards;
+    -webkit-animation: titlefade 1s ease-in 16s forwards;
+    -moz-animation: titlefade 1s ease-in 16s forwards;
+    -o-animation: titlefade 1s ease-in 16s forwards;
+    -ms-animation: titlefade 1s ease-in 16s forwards;
+}
+
+.euripides9 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 18s forwards;
+    -webkit-animation: titlefade 1s ease-in 18s forwards;
+    -moz-animation: titlefade 1s ease-in 18s forwards;
+    -o-animation: titlefade 1s ease-in 18s forwards;
+    -ms-animation: titlefade 1s ease-in 18s forwards;
+}
+
+.euripides10 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 20s forwards;
+    -webkit-animation: titlefade 1s ease-in 20s forwards;
+    -moz-animation: titlefade 1s ease-in 20s forwards;
+    -o-animation: titlefade 1s ease-in 20s forwards;
+    -ms-animation: titlefade 1s ease-in 20s forwards;
+}
+
+.euripides11 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 22s forwards;
+    -webkit-animation: titlefade 1s ease-in 22s forwards;
+    -moz-animation: titlefade 1s ease-in 22s forwards;
+    -o-animation: titlefade 1s ease-in 22s forwards;
+    -ms-animation: titlefade 1s ease-in 22s forwards;
+}
+
+.euripides12 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 24s forwards;
+    -webkit-animation: titlefade 1s ease-in 24s forwards;
+    -moz-animation: titlefade 1s ease-in 24s forwards;
+    -o-animation: titlefade 1s ease-in 24s forwards;
+    -ms-animation: titlefade 1s ease-in 24s forwards;
+}
+
+.euripides13 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 26s forwards;
+    -webkit-animation: titlefade 1s ease-in 26s forwards;
+    -moz-animation: titlefade 1s ease-in 26s forwards;
+    -o-animation: titlefade 1s ease-in 26s forwards;
+    -ms-animation: titlefade 1s ease-in 26s forwards;
+}
+
+.euripides14 {
+  opacity: 0;
+    animation: titlefade 1s ease-in 28s forwards;
+    -webkit-animation: titlefade 1s ease-in 28s forwards;
+    -moz-animation: titlefade 1s ease-in 28s forwards;
+    -o-animation: titlefade 1s ease-in 28s forwards;
+    -ms-animation: titlefade 1s ease-in 28s forwards;
+}
+
+#myFunction3:hover {
+  cursor: pointer;
+}
+
+#myFunction31 {
+  display: none;
+}
+
+.logobigcorp {
+  color: orange;
+  font-size: 90%; 
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 0px 0px 20px orange;
+  font-stretch: extra-expanded;
+  text-align: center;
+  font-weight: bold;
+}
+
+@-webkit-keyframes rumble {
+  50% {
+    -webkit-transform: translateY(-.2em);
+    transform: translateY(-.2em)
+  }
+}
+
+@keyframes rumble {
+  50% {
+    -webkit-transform: translateY(-.2em);
+    transform: translateY(-.2em)
+  }
+}
+
+@-moz-keyframes rumble {
+  50% {
+    -webkit-transform: translateY(-.2em);
+    transform: translateY(-.2em)
+  }
+}
+
+@-o-keyframes rumble {
+  50% {
+    -webkit-transform: translateY(-.2em);
+    transform: translateY(-.2em)
+  }
+}
+
+@-ms-keyframes rumble {
+  50% {
+    -webkit-transform: translateY(-.2em);
+    transform: translateY(-.2em)
+  }
+}
+
+.rumble {
+  -webkit-animation: rumble linear 0.1s 0s infinite;
+  animation: rumble linear 0.1s 0s infinite;
+  -moz-animation: rumble linear 0.1s 0s infinite;
+  -o-animation: rumble linear 0.1s 0s infinite;
+  -ms-animation: rumble linear 0.1s 0s infinite;
+  display:inline-block;
+}
+
+@-webkit-keyframes shudder {
+  50% {
+    -webkit-transform: translateX(0.2em);
+    transform: translateX(0.2em)
+  }
+}
+
+@keyframes shudder {
+  50% {
+    -webkit-transform: translateX(0.2em);
+    transform: translateX(0.2em)
+  }
+}
+
+@-moz-keyframes shudder {
+  50% {
+    -webkit-transform: translateX(0.2em);
+    transform: translateX(0.2em)
+  }
+}
+
+@-o-keyframes shudder {
+  50% {
+    -webkit-transform: translateX(0.2em);
+    transform: translateX(0.2em)
+  }
+}
+
+
+@-ms-keyframes shudder {
+  50% {
+    -webkit-transform: translateX(0.2em);
+    transform: translateX(0.2em)
+  }
+}
+
+.shudder {
+  -webkit-animation: shudder linear 0.1s 0s infinite;
+  animation: shudder linear 0.1s 0s infinite;
+  -moz-animation: shudder linear 0.1s 0s infinite;
+  -o-animation: shudder linear 0.1s 0s infinite;
+  -ms-animation: shudder linear 0.1s 0s infinite;
+
+  display: inline-block;
+}
+
+#fail {
+  display: none;
+}
+
+#succ {
+  display: none;
+}
+
+
+.backgroundbigcorp001 {
+  background-image: url("../immersionreflexion_images/pict42.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+
+}
+
+.computerblocbigcorp a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+ }
+
+.computerblocbigcorp a:hover {
+  color: orange;
+  text-decoration:none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+}
+
+
+.computerblocbigcorp {
+  color: white;
+  font-size: 130%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  text-align: left;
+  
+/*
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+*/  
+  position: center;
+
+  /*transform: translate(-50%, -50%);*/
+  
+  max-width: 600px;
+  margin: auto;
+  margin-top: 65px;
+
+}
+.bigcorp a {
+  color:  darkorange;
+  font-weight: bold;
+  
+}
+
+.bigcorp a:hover {
+  color:  darkorange;
+}
+ 
+
+.linkbigcorp {
+  display: inline-block;
+  position: relative;
+}
+
+.linkbigcorp::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: darkorange;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkbigcorp:hover:before {
+  right: 0 !important;
+}
+
+
+.backgroundunderground {
+  background-image: url("../immersionreflexion_images/pict43.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-color: black;
+  background-position: center;
+
+}
+
+.computerblocunderground a {
+  color: DeepSkyBlue;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+ }
+
+.computerblocunderground a:hover {
+  color: LightSkyBlue;
+  text-decoration:none;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7 !important;
+
+
+}
+
+
+.computerblocunderground {
+  color: white;
+  font-size: 130%;
+  font-family: Glass_TTY_VT2020;
+  text-shadow: 2px 2px 15px #d7d7d7, -2px -2px 15px #d7d7d7;
+  text-align: left;
+  
+/*
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+*/  
+  position: center;
+
+  /*transform: translate(-50%, -50%);*/
+  
+  max-width: 600px;
+  margin: auto;
+  margin-top: 65px;
+
+}
+
+
+ 
+.linkunderground {
+  display: inline-block;
+  position: relative;
+}
+
+.linkunderground::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: DeepSkyBlue;
+    height: 3px;
+
+    -webkit-transition-property: right;
+    -moz-transition-property: right;
+    -o-transition-property: right;
+    -ms-transition-property: right;
+    transition-property: right;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+}
+
+.linkunderground:hover:before {
+  right: 0 !important;
+}
+
+
+.logounderground {
+color: DeepSkyBlue;
+}
+
+.logounderground2 {
+  color: LightSkyBlue;
+}
+
+
+.city002end {
+
+  position: relative;
+  margin: auto;
+  max-width: 30%; 
+
+  margin-top: 150px;
+  margin-bottom: 50px;
+  
+  text-align: left;
+  
+  font-family: Glass_TTY_VT2020;
+  font-size: 100%;
+  color: white;
+  opacity: 0%;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  padding: 30px;  
+  background: rgba(0, 0, 0, 0.7);
+
+
+  animation: titlefade 2s ease-in 0s forwards;
+  -webkit-animation: titlefade 2s ease-in 0s forwards;
+  -moz-animation: titlefade 2s ease-in 0s forwards;
+  -o-animation: titlefade 2s ease-in 0s forwards;
+  -ms-animation: titlefade 2s ease-in 0s forwards;
+
+}
+
+.city002end a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.city002end a:hover {
+  color: gray;
+  text-decoration:none;
+}
+

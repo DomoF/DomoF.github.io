@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundunderground>
+  <div class="computerblocunderground">
+    <span class="logoundeground2">xxxxxxxxxxxxxx</span><span class="logounderground">underground-hypermedium</span><span class="logoundeground2">xxxxxxxxxxxxxx</span><br><br>
+    
+ <div id=fail> Falsch. Gib bitte ein gültiges Passwort ein.<br><br> 
+  Tipp: Weisst du noch, wo du unser Zeichen gesehen hast: 
+    <br><span class="linkunderground blink"><a href="immersionreflexion_street003.html">/...</a></span>
+    <br><br><span class="linkunderground blink"><a href="immersionreflexion_underground000.html">/try again</a></span></div>
+    
+    <div id=succ>Wir haben gehört, dass du langsam der Immersion auf die Schliche kommst.<br><br>
+    <span class="linkunderground blink"><a href="immersionreflexion_underground002.html">/...</a></span></div><br>
+    
+
+       <br><br><br><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span><span class="logounderground blink"><span><<<</span></span><span class="logounderground blink2"><span><<<</span></span><span class="logounderground blink3"><span><<<</span></span>
+
+
+    </div>
+
+
+
+    <script>
+
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     if (uName.includes("<") || uName.includes("<<") || uName.includes("<<<") || uName.includes("Reflection") || uName.includes("reflection") || uName.includes("Reflexion") || uName.includes("reflexion") || uName.includes("Pentheus") || uName.includes("pentheus") || uName.includes("underground")|| uName.includes("underground-hypermedium") || uName.includes("hypermedium") )  {
+     document.getElementById("succ").style.display = "inline";
+     
+   }
+   else {
+    document.getElementById("fail").style.display = "inline";
+   }
+ }
+
+   updateHTML();
+
+  </script>
+
+  
+</body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    <span class=logobigcorp><span class=blink> F E H L E R F E H L E R F E H L E R</span></span><br><br> 
+      Sie haben den lat. Wortstamm re-flectere in irgendeiner Form benutzt. Dieser Begriff ist nur von Mitarbeitenden von <span class=logobigcorp>BIGCORP</span> zu verwenden. <br><br>Bitte loggen Sie sich mit einem gültigen <span class=logobigcorp>BIGCORP-Benutzernamen</span> ein. 
+
+
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter blink"><a href="immersionreflexion_computer021.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+     document.getElementById("storedName3").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

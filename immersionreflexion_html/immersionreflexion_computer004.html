@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction2() {
+  document.getElementById("computerbloc1003").style.display = "inline";
+  document.getElementById("myFunction2").style.display = "none";
+  document.getElementById("myFunction21").style.display = "none";
+}
+</script>
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    Hast <span class=computerplayer>du</span> in<span class=computerplayer> deinem</span> Leben überhaupt schon mal eine <span id="myFunction2" class=" linkcomputer" onclick="myFunction2()">/Theateraufführung</span> <span id="myFunction21">gesehen?</span><span id="computerbloc1003">/Theateraufführung - eine altertümliche Form der Darstellung, bei der jemand durch einen leeren Raum geht und jemand anderes dabei zuschaut<span class="sup"><a href="immersionreflexion_ref2.html"><sup>2</sup></a></span> - gesehen?</span>
+
+
+    <br><br><span class="linkcomputerplayer"><a href="immersionreflexion_computer0051.html">/Ja</a></span>
+    <br><span class="linkcomputerplayer"><a href="immersionreflexion_computer0052.html">/Nein</a></span>
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

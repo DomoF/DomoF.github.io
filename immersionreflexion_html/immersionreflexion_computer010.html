@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    Menschen halbnackt, an einer Konstruktion aus Metall befestigt, laufen im Takt der Pauke gegen das endlose Fahren der Förderbänder an, auf denen sie stehen. Hoch oben in der Luft, scheinbar im ständigen Fall gegen das Publikum begriffen, schreien sie wie aus einer Kehle den Text von Aischylos' Bakchen.<span class="sup"><a href="immersionreflexion_ref3.html"><sup>3</sup></a></span>
+    <br><br><span class="linkcomputer blink"><a href="immersionreflexion_computer011.html">/...</a></span>
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

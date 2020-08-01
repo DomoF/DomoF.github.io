@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    <span class=euripides1>Auf, ihr Bakchen,</span><br> 
+    <span class=euripides2>auf, ihr Bakchen,</span><br>
+    <span class=euripides3>im Schmuck des goldenströmenden Tmolos</span><br>
+    <span class=euripides4>besinget Dionysos,</span><br>
+    <span class=euripides5>unter dem Dröhnen der Pauken,</span><br>
+    <span class=euripides6>preiset jauchzend den jauchzenden Gott</span><br>
+    <span class=euripides7>mit lautem phrygischem Ruf,</span><br> 
+    <span class=euripides8>wenn die Flöte lieblichen Klanges</span><br>
+    <span class=euripides9>heilig, in heiligen Weisen erschallt, <br>geleitend die Schwärmer</span><br>   
+    <span class=euripides10>hinauf in die Berge, hinauf in die Berge!" <br>Und fröhlich,</span><br>  
+    <span class=euripides11>so wie ein Füllen zur Seite der nährenden Mutter,</span><br> 
+    <span class=euripides12>stürmt vorwärts im Tanzschritt,</span><br>   
+    <span class=euripides13>die Bakche.<span class="sup"><a href="immersionreflexion_ref4.html"><sup>4</sup></a></span>  
+    
+    <span class=euripides14>
+      <br><br><span class="linkcomputerplayer blink"><a href="immersionreflexion_computer012.html">/...</a></span>
+
+
+      <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+      <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+    </span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

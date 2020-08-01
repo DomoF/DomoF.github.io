@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+<body class="backgroundbigcorp001">
+	<div class="computerblocbigcorp">
+    <div id=fail>FALSCH. BITTE GEBEN SIE EINEN GÜLTIGEN BENUTZERNAMEN VON <span class="logobigcorp">
+    B I G C O R P </span> EIN. 
+    <br><br>TIPP: VERSUCHEN SIE ES MIT DEM FIRMENNAMEN. 
+    <br><br><span class="linkcomputer blink"><a href="immersionreflexion_computer021.html">/try again</a></span></div>
+    
+    <div id=succ><span class=logobigcorp><span class=blink>WELCOME BACK TO BIGCORP</span></span><br><br> 
+      Please proceed to the restriced section <span class="linkcomputer blink"><a href="immersionreflexion_bigcorp001.html">/here</a></span></div>
+
+
+		</div>
+      <script>
+
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     if (uName.includes("BIGCORP") || uName.includes("bigcorp") || uName.includes("BC") || uName.includes("bc") || uName.includes("Bc") || uName.includes("bC") || uName.includes("immersion") || uName.includes("IMMERSION") || uName.includes("userbigcorp") || uName.includes("mitarbeiterbigcorp")|| uName.includes("bigcorp") || uName.includes("Mitarbeiter BigCorp") )  {
+     document.getElementById("succ").style.display = "inline";
+     
+   }
+   else {
+    document.getElementById("fail").style.display = "inline";
+   }
+ }
+
+   updateHTML();
+
+  </script>
+    </body>
+</html>
+
+
+

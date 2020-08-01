@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction3() {
+  document.getElementById("myFunction3").style.display = "none";
+  document.getElementById("myFunction31").style.display = "inline";
+
+}
+</script>
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+
+
+    Das Versprechen von <span class=logobigcorp>BIGCORP</span> war nämlich, dass Grenzen überschritten werden können:<br> 
+    Eine technologisch bedingte „Unmittelbarkeit der Erfahrung und die Idee der technologischen Verfügbarkeit vielfältiger und nach Belieben wählbarer Subjektpositionen."<span class="sup"><a href="immersionreflexion_ref6.html"><sup>6</sup></a></span>
+    <br><br><span class="linkcomputerplayer blink"><a href="immersionreflexion_computer018.html">/...</a></span></span>
+
+   
+
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+     document.getElementById("storedName3").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

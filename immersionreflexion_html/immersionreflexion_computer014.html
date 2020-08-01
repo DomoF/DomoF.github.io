@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">Pentheus ist König der Stadt, zu der Dionysos kommt und von deren Leuten er Anbetung fordert. Pentheus erkennt ihn aber nicht als göttliches Wesen an. Er führt die Stadt mit strenger, säkularisierter Hand und versucht, dem Rausch Einhalt zu gebieten. 
+  Die Frauen aber ziehen aufs Land zum Gott hinaus, um mit Dionysos Feste zu feiern. Trotz Militär und Polizei ist Pentheus machtlos
+    
+    <br><br><span class="linkcomputer blink"><a href="immersionreflexion_computer015.html">/...</a></span>
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>

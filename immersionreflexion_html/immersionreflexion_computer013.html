@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../immersionreflexion_css/styleimmersionreflexion.css">
+
+<script>
+function myFunction3() {
+  document.getElementById("myFunction3").style.display = "none";
+  document.getElementById("myFunction31").style.display = "inline";
+
+}
+</script>
+</head>
+
+<body class=backgroundcomputer001>
+  <div class="computerbloc">
+    <span class="computerplayer"><span id="storedName3"></span>:
+    <br><br>Worum geht es im Stück denn?</span>
+
+    <br><br><span id="myFunction3" class="linkcomputer blink" onclick="myFunction3()">/...</span>
+
+
+    <span id="myFunction31">Ein neuer Gott – Dionysos, der kommende Gott – tritt in die Welt und die Leute folgen ihm. Sie folgen ihm, weil er Rausch, Trunkenheit verbreitet und „Gemeinschaft und Identität, Orientierung und Gefolgschaft – mithin die Befreiung von individueller Verantwortung und moralischen Fesseln“<span class="sup"><a href="immersionreflexion_ref5.html"><sup>5</sup></a></span>   verspricht.<br><br><span class="linkcomputer blink"><a href="immersionreflexion_computer014.html">/...</a></span></span>
+
+   
+
+
+
+    <br><br><span class="computerfooter"><a href="immersionreflexion_computer003.html">/back to main screen</a></span>    
+    <br><span class="computerfooter"><a href="immersionreflexion_computer002.html">/reset user: <span class="computerfooterplayer" id="storedName2"></span></a></span>
+
+  </div>
+  
+  <script>
+   function getName() {
+     return localStorage.getItem("userName");
+   }
+
+   function updateHTML() {
+     var uName = getName();
+     document.getElementById("storedName2").innerHTML = uName;
+     document.getElementById("storedName3").innerHTML = uName;
+   }
+
+   updateHTML();
+
+  </script>
+
+
+</body>
