@@ -1,0 +1,203 @@
+:root {
+  --bg: #12100f;
+  --text: #f1ece5;
+  --muted: #b9b0a5;
+  --tertiary: #9a9188;
+  --max-width: 42rem;
+  --pad: 1.25rem;
+  --serif: "Iowan Old Style", Georgia, "Times New Roman", ui-serif, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.14em;
+  text-decoration-color: rgba(241, 236, 229, 0.75);
+  transition: text-decoration-thickness 120ms ease,
+              text-underline-offset 120ms ease,
+              text-decoration-color 120ms ease,
+              background-color 120ms ease,
+              color 120ms ease;
+}
+
+a:hover {
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(241, 236, 229, 1);
+}
+
+a:focus-visible {
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(241, 236, 229, 1);
+  background: rgba(241, 236, 229, 0.08);
+  outline: none;
+}
+
+.site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4.5rem var(--pad) 5rem;
+}
+
+.intro {
+  margin-bottom: 4rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: clamp(2.35rem, 9vw, 4.4rem);
+  line-height: 0.96;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.site-subtitle {
+  margin: 0.95rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--muted);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.site-descriptor {
+  margin: 1.6rem 0 0;
+  max-width: 24rem;
+  font-size: clamp(1.28rem, 3.6vw, 1.55rem);
+  line-height: 1.42;
+}
+
+.section + .section {
+  margin-top: 3.5rem;
+}
+
+.section-label {
+  margin: 0 0 1.05rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact {
+  margin: 0;
+  font-style: normal;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.station,
+.education {
+  margin: 0;
+}
+
+.station + .station {
+  margin-top: 2.1rem;
+}
+
+.station-meta,
+.education-meta {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+.station-meta {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.station-role,
+.education-title {
+  margin: 0.32rem 0 0;
+  font-size: 1.14rem;
+  line-height: 1.42;
+}
+
+.station-production {
+  margin: 0.16rem 0 0;
+  font-size: 1.24rem;
+  line-height: 1.34;
+}
+
+.station-credit {
+  margin: 0.16rem 0 0;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  color: var(--tertiary);
+}
+
+.education-title,
+.education-meta,
+.station-role,
+.station-production,
+.station-credit {
+  margin-left: 0;
+}
+
+.station-work {
+  margin-top: 0.45rem;
+  padding-left: 0.2rem;
+}
+
+.station-work + .station-work {
+  margin-top: 1.35rem;
+}
+
+.cv-link {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --pad: 2rem;
+  }
+
+  .site {
+    padding-top: 6.25rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .intro {
+    margin-bottom: 4.75rem;
+  }
+
+  .section + .section {
+    margin-top: 4rem;
+  }
+
+  .station + .station {
+    margin-top: 2.35rem;
+  }
+}
